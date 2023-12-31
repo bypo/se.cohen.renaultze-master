@@ -187,42 +187,42 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
                 this.setCapabilityValue('charge_mode', 'always_charging')
               }
             }  */
-        renaultApi.getCockpit()
-            .then(result => {
-              this.log(result);
-              if (result.status == 'ok') {
-                this.setCapabilityValue('measure_totalMileage', result.data.totalMileage ?? 0);
-              if (renaultApi.supportFuelStatus() == true) {
-                this.setCapabilityValue('measure_batteryAutonomy', result.data.fuelAutonomy ?? 0);
-                }
-              }
-              renaultApi.getACStatus()
-                .then(result => {
-                 this.log(result);
-                 if (result.status == 'ok') {
-                   this.setHvacStatus(result.data.hvacStatus);
+            renaultApi.getCockpit()
+              .then(result => {
+               this.log(result);
+               if (result.status == 'ok') {
+                  this.setCapabilityValue('measure_totalMileage', result.data.totalMileage ?? 0);
+               if (renaultApi.supportFuelStatus() == true) {
+                  this.setCapabilityValue('measure_batteryAutonomy', result.data.fuelAutonomy ?? 0);
                   }
-              renaultApi.getLocation()
-                .then(result => {
+               }
+               renaultApi.getACStatus()
+                 .then(result => {
                  this.log(result);
                  if (result.status == 'ok') {
-                   this.setLocation(result);
+                    this.setHvacStatus(result.data.hvacStatus);
                  }
-                })
-                .catch((error) => {
-                    this.log(error);
-                });
+                 renaultApi.getLocation()
+                   .then(result => {
+                   this.log(result);
+                   if (result.status == 'ok') {
+                      this.setLocation(result);
+                      }
+                   })
+                   .catch((error) => {
+                       this.log(error);
+                       });
+                 })
+                 .catch((error) => {
+                     this.log(error);
+                 });
               })
               .catch((error) => {
                   this.log(error);
-                });
-          })
+                  });
+              })
           .catch((error) => {
-            this.log(error);
-            });
-          })
-          .catch((error) => {
-            this.log(error);
+              this.log(error);
           });  
       })
       .catch((error) => {

@@ -22,7 +22,6 @@
     "measure_plugStatus",
     "measure_chargingStatus",
     "measure_chargingRemainingTime",
-    "measure_chargingInstantaneousPower",
     "measure_isHome",
     "measure_location",
     "measure_location_latitude",

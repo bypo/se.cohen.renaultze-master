@@ -223,7 +223,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=renault-zoe"
+            "filter": "driver_id=renault-zoe|dacia-spring"
           }
         ],
         "id": "is_charging"
@@ -239,7 +239,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=renault-zoe"
+            "filter": "driver_id=renault-zoe|dacia-spring"
           }
         ],
         "id": "is_pluggedIn"
@@ -319,7 +319,6 @@
         "measure_plugStatus",
         "measure_chargingStatus",
         "measure_chargingRemainingTime",
-        "measure_chargingInstantaneousPower",
         "measure_isHome",
         "measure_location",
         "measure_location_latitude",
