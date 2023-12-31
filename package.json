@@ -11,10 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/joco73/se.cohen.renaultze.git"
   },
-  "author": "Jonathan Cohen",
+  "author": "Jonathan Cohen / Oreste Dimaggio",
   "license": "LGPL-3.0-only",
   "bugs": {
-    "url": "https://github.com/joco73/se.cohen.renaultze/issues"
+    "url": "https://github.com/bypo/se.cohen.renaultze-master/issues"
   },
-  "homepage": "https://github.com/joco73/se.cohen.renaultze.git#readme"
+  "homepage": "https://github.com/bypo/se.cohen.renaultze-master"
 }

@@ -149,7 +149,7 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
           this.setCapabilityValue('measure_plugStatus', false);
           this.setCapabilityValue('measure_chargingStatus', false);
           this.setCapabilityValue('measure_chargingRemainingTime', 0);
-          this.setCapabilityValue('measure_chargingInstantaneousPower', 0);
+          //this.setCapabilityValue('measure_chargingInstantaneousPower', 0);
         }
         else {
           this.setCapabilityValue('measure_battery', result.data.batteryLevel ?? 0);
@@ -174,7 +174,7 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
           }
           this.setCapabilityValue('measure_chargingStatus', chargingStatus);
           this.setCapabilityValue('measure_chargingRemainingTime', chargingRemainingTime);
-          this.setCapabilityValue('measure_chargingInstantaneousPower', chargingInstantaneousPower);
+          //this.setCapabilityValue('measure_chargingInstantaneousPower', chargingInstantaneousPower);
         }
         renaultApi.getChargeMode()
           .then(result => {
