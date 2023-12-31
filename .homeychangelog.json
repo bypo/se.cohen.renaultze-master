@@ -59,5 +59,14 @@
   },
   "2.3.0": {
     "en": "Dacia Spring is now supported"
+  },
+  "2.3.1": {
+    "en": "Added Dacia Sprint support + small fixes"
+  },
+  "2.3.2": {
+    "en": "Encryption key corrected"
+  },
+  "2.3.3": {
+    "en": "key is now correct"
   }
 }
