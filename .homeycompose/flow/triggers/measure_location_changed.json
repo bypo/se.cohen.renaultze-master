@@ -1,0 +1,15 @@
+{
+  "title": {
+    "en": "Vehicle location changed",
+    "sv": "Fordonets position ändrades",
+    "fr": "L'emplacement du véhicule a changé",
+    "it": "La posizione del veicolo è cambiata"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=renault-zoe|dacia-spring"
+    }
+  ]
+}

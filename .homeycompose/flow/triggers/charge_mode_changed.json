@@ -1,0 +1,15 @@
+{
+  "title": {
+    "en": "Charge mode changed",
+    "sv": "Laddläge ändrades",
+    "fr": "Changement de mode de charge",
+    "it": "Modalità di ricarica variata"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=renault-zoe"
+    }
+  ]
+}

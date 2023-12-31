@@ -1,0 +1,15 @@
+{
+  "title": {
+    "en": "Charging started",
+    "sv": "Laddning startad",
+    "fr": "La charge a commencé",
+    "it": "La ricarica è iniziata"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=renault-zoe|dacia-spring"
+    }
+  ]
+}

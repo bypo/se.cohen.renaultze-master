@@ -1,0 +1,15 @@
+{
+    "type": "number",
+    "decimals": 2,
+    "title": {
+      "en": "Total milage",
+      "sv": "Total körsträcka",
+      "fr": "Kilométrage total",
+      "it": "Chilometri totali"
+    },
+    "units": "km",
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "icon":"assets/icons/totalMileage.svg"
+  }

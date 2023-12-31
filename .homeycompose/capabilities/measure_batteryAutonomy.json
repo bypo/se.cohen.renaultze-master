@@ -1,0 +1,15 @@
+{
+    "type": "number",
+    "decimals": 0,
+    "title": {
+      "en": "Range",
+      "sv": "Räckvidd",
+      "fr": "Autonomie",
+      "it": "Autonomia"
+    },
+    "units": "km",
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "icon":"assets/icons/batteryAutonomy.svg"
+  }

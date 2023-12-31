@@ -1,0 +1,15 @@
+{
+  "title": {
+    "en": "Charging stopped",
+    "sv": "Laddning avslutad",
+    "fr": "La charge s'est arrêtée",
+    "it": "Ricarica si è interrotta"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=renault-zoe|dacia-spring"
+    }
+  ]
+}

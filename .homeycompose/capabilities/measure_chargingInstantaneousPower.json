@@ -1,0 +1,15 @@
+{
+    "type": "number",
+    "decimals": 2,
+    "title": {
+      "en": "Charging rate",
+      "sv": "Laddhastighet",
+      "fr": "Puissance de charge",
+      "it": "Velocità di ricarica"
+    },
+    "units": "kW",
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "icon":"assets/icons/chargingInstantaneousPower.svg"
+  }

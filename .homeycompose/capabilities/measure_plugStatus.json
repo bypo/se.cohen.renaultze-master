@@ -1,0 +1,13 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Plugged in",
+    "sv": "Inkopplad",
+    "fr": "Branché",
+    "it": "Connesso"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon":"assets/icons/plugStatus.svg"
+}

@@ -1,0 +1,15 @@
+{
+  "title": {
+    "en": "Vehicle is at home",
+    "sv": "Bilen är hemma",
+    "fr": "Véhicule est à la maison",
+    "it": "Il veicolo è a casa"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=renault-zoe|dacia-spring"
+    }
+  ]
+}

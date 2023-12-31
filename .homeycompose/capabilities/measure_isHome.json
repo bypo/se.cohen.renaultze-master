@@ -1,0 +1,13 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Is vehicle at home",
+    "sv": "Är fordonet hemma",
+    "fr": "Le véhicule est à la maison",
+    "it": "Il veicolo è a casa"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "assets/icons/isHome.svg"
+}

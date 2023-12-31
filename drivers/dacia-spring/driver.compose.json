@@ -1,0 +1,69 @@
+{
+  "id": "dacia-spring",
+  "name": {
+    "en": "Dacia Spring"
+  },
+  "class": "other",
+  "platforms": [
+    "local"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "capabilities": [
+    "onoff",
+    "measure_battery",
+    "measure_batteryTemperature",
+    "measure_batteryAvailableEnergy",
+    "measure_batteryAutonomy",
+    "measure_totalMileage",
+    "measure_plugStatus",
+    "measure_chargingStatus",
+    "measure_chargingRemainingTime",
+    "measure_chargingInstantaneousPower",
+    "measure_isHome",
+    "measure_location",
+    "measure_location_latitude",
+    "measure_location_longitude"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "title": {
+        "en": "Turn on heater",
+        "it": "Accendi climatizzatore",
+        "sv": "Slå på värmaren",
+        "fr": "Allumer le chauffage"
+      }
+    }
+  },
+  "energy": {
+    "batteries": [
+      "INTERNAL"
+    ]
+  },
+  "platforms": [
+    "local"
+  ],
+  "pair": [
+    {
+      "id": "login_credentials",
+      "template": "login_credentials"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      },
+      "options": {
+        "singular": true
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}

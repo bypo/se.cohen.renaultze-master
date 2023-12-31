@@ -1,0 +1,12 @@
+{
+    "type": "string",
+    "title": {
+      "en": "Latitude",
+      "sv": "Latitud",
+      "fr": "Latitude",
+      "it": "Latitudine"
+    },
+    "getable": true,
+    "setable": false,
+    "uiComponent": null
+  }

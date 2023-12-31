@@ -1,0 +1,46 @@
+{
+    "id": "set_charge_mode",
+    "title": {
+        "en": "Set charge mode",
+        "sv": "Ställ laddläge",
+        "fr": "Régler le mode de charge",
+        "it": "Modalità di ricarica"
+    },
+    "titleFormatted": {
+        "en": "Set charge mode to [[mode]]",
+        "sv": "Ställ laddläge till [[mode]]",
+        "fr": "Régler le mode de charge en [[mode]]",
+        "it": "Regolare la modalità di ricarica in [[mode]]"
+    },
+    "args": [
+        {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=renault-zoe"
+        },
+        {
+            "name": "mode",
+            "type": "dropdown",
+            "values": [
+                {
+                    "id": "always_charging",
+                    "title": {
+                        "en": "Always",
+                        "sv": "Alltid på",
+                        "fr": "Instantannée",
+                        "it": "Sempre"
+                    }
+                },
+                {
+                    "id": "schedule_mode",
+                    "title": {
+                        "en": "Scheduled",
+                        "sv": "Schemalagd",
+                        "fr": "Personnalisée",
+                        "it": "Personalizzato"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "number",
+  "decimals": 0,
+  "title": {
+    "en": "Battery temparature",
+    "sv": "Batteritemperatur",
+    "fr": "Température de la batterie",
+    "it": "Temperatura della batteria"
+  },
+  "units": "°C",
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "assets/icons/batteryTemperture.svg"
+}

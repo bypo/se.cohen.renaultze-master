@@ -1,0 +1,15 @@
+{
+  "title": {
+    "en": "Vehicle is plugged in",
+    "sv": "Bilen är inkopplad",
+    "fr": "Le véhicule est branché",
+    "it": "Il veicolo è connesso"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=renault-zoe|dacia-spring"
+    }
+  ]
+}

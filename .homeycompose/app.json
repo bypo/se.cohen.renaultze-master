@@ -1,0 +1,65 @@
+{
+  "id": "se.cohen.renaultze",
+  "version": "2.3.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#0d3b66",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Renault and Dacia",
+    "it": "Renault e Dacia"
+  },
+  "description": {
+    "en": "Connect to your electric Renault and Dacia",
+    "it": "Connetti la tua Renault elettrica e Dacia"
+  },
+  "tags": {
+    "en": [
+      "renault, zoe, dacia, spring, battery, heating"
+    ]
+  },
+  "category": [
+    "localization"
+  ],
+  "homeyCommunityTopicId": 71850,
+  "permissions": [
+    "homey:manager:geolocation"
+  ],
+  "images": {
+    "xlarge": "/assets/images/xlarge.png",
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Jonathan Cohen / Oreste Dimaggio",
+    "email": "jonathan@cohen.se, oreste@dimaggio.it"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Jonathan Cohen",
+        "email": "jonathan@cohen.se"
+      },
+      {
+        "name": "Oreste Dimaggio",
+        "email": "oreste@dimaggio.it"
+      }
+    ]
+  },
+  "copyright": "Jonathan Cohen (jonathan@cohen.se), Oreste Dimaggio <oreste@dimaggio.it>",
+  "license": " GPL-3.0-or-later",
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "oreste@dimaggio.it"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/joco73/se.cohen.renaultze/issues"
+  },
+  "source": "https://github.com/joco73/se.cohen.renaultze",
+  "homepage": "https://github.com/joco73/se.cohen.renaultze#readme"
+}

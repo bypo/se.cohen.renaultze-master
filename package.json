@@ -1,0 +1,20 @@
+{
+  "name": "se.cohen.renaultze",
+  "version": "2.3.0",
+  "description": "Add support to check status on your Renault Zoe, Megane or Dacia Spring and also handle pre-heating.",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^1.6.3",
+    "jwt-check-expiration": "^1.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joco73/se.cohen.renaultze.git"
+  },
+  "author": "Jonathan Cohen",
+  "license": "LGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/joco73/se.cohen.renaultze/issues"
+  },
+  "homepage": "https://github.com/joco73/se.cohen.renaultze.git#readme"
+}

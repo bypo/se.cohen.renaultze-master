@@ -1,0 +1,32 @@
+{
+  "type": "enum",
+  "values": [
+    {
+      "id": "always_charging",
+      "title": {
+        "en": "Always",
+        "sv": "Alltid på",
+        "fr": "Instantanée",
+        "it": "Sempre"
+      }
+    },
+    {
+      "id": "schedule_mode",
+      "title": {
+        "en": "Scheduled",
+        "sv": "Schemalagd",
+        "fr": "Personnalisée",
+        "it": "Personalizzato"
+      }
+    }
+  ],
+  "title": {
+    "en": "Charge mode",
+    "sv": "Laddläge",
+    "fr": "Mode de charge",
+    "it": "Modalità di carica"
+  },
+  "uiComponent": "picker",
+  "getable": true,
+  "setable": true
+}
