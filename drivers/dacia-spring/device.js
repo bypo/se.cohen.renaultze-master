@@ -57,6 +57,7 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
       const settings = this.getSettings();
       let renaultApi = new api.RenaultApi(settings);
       const setLocation = renaultApi.calculateHome(HomeyLat, HomeyLng, lat, lng);
+      this.log('measure_ishome ' + setLocation);
       await this.setCapabilityValue('measure_isHome', setLocation <= 1);
       await this.setCapabilityValue('measure_location', 'https://www.google.com/maps/search/?api=1&query=' + lat + ',' + lng);
       await this.setCapabilityValue('measure_location_latitude', lat.toString());
@@ -65,7 +66,7 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
       this.homey.app.log(error);
     }
   }
-/*
+
   async chargeModeActionRunListener(args, state) {
     this.log('-> chargeModeActionRunListener run');
     const settings = this.getSettings();
@@ -87,7 +88,7 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
         this.setCapabilityValue('charge_mode', opts)
       });
   }
-*/
+
   async onCapabilityButton(opts) {
     this.log('-> onCapabilityButton is clicked');
     if (opts === true) {
@@ -178,7 +179,7 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
         }
         renaultApi.getChargeMode()
           .then(result => {
-            this.log(result); /*
+            this.log(result); 
             if (result.status == 'ok') {
               if (result.data.chargeMode === 'scheduled') {
                 this.setCapabilityValue('charge_mode', 'schedule_mode')
@@ -186,7 +187,7 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
               else {
                 this.setCapabilityValue('charge_mode', 'always_charging')
               }
-            }  */
+            }
             renaultApi.getCockpit()
               .then(result => {
                this.log(result);
@@ -231,19 +232,19 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
   }
 
   async onAdded() {
-    this.log('MyDevice has been added');
+    this.log('Dacia Spring has been added');
   }
 
   async onSettings({ oldSettings, newSettings, changedKeys }) {
-    this.log('MyDevice settings where changed');
+    this.log('Dacia Spring settings where changed');
   }
 
   async onRenamed(name) {
-    this.log('MyDevice was renamed');
+    this.log('Dacia Spring was renamed');
   }
 
   async onDeleted() {
-    this.log('MyDevice has been deleted');
+    this.log('Dacia Spring has been deleted');
     clearInterval(this.pollingInterval);
   }
 }
