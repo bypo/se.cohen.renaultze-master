@@ -291,6 +291,38 @@
             ]
           }
         ]
+      },
+      {
+        "title": {
+          "en": "Start Charge"
+        },
+        "hint": {
+          "en": "This flow starts/resume battery charging for your vehicle"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=renault-zoe|dacia-spring"
+          }
+        ],
+        "id": "start-charge"
+      },
+      {
+        "title": {
+          "en": "Stop Charge"
+        },
+        "hint": {
+          "en": "This flow stops/pause battery charging for your vehicle"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=renault-zoe|dacia-spring"
+          }
+        ],
+        "id": "stop-charge"
       }
     ]
   },
@@ -460,6 +492,19 @@
       "getable": true,
       "setable": true
     },
+    "charge-start": {
+      "type": "boolean",
+      "title": {
+        "en": "Charging",
+        "sv": "Laddar",
+        "fr": "En charge",
+        "it": "In carica"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "toggle",
+      "icon": "assets/icons/chargingStatus.svg"
+    },
     "measure_batteryAutonomy": {
       "type": "number",
       "decimals": 0,
@@ -511,8 +556,7 @@
       "title": {
         "en": "Charging rate",
         "sv": "Laddhastighet",
-        "fr": "Puissance de charge",
-        "it": "Velocità di ricarica"
+        "fr": "Puissance de charge"
       },
       "units": "kW",
       "getable": true,

@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "Stop Charge",
+    "it": "Termina ricarica"
+  },
+  "hint": {
+    "en": "This flow stops/pause battery charging for your vehicle"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=renault-zoe|dacia-spring"
+    }
+  ]
+}

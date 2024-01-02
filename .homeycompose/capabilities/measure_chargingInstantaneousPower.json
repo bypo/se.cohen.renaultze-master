@@ -4,8 +4,7 @@
     "title": {
       "en": "Charging rate",
       "sv": "Laddhastighet",
-      "fr": "Puissance de charge",
-      "it": "Velocità di ricarica"
+      "fr": "Puissance de charge"  
     },
     "units": "kW",
     "getable": true,

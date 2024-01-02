@@ -1,0 +1,5 @@
+DEBUG:renault_api.kamereon:Received Kamereon response 200 on POST to https://api-wired-prod-1-euw1.wrd-aws.com/commerce/v1/accounts/77644471-a98d-4fa8-8108-818a0ae55863/kamereon/kcm/v1/vehicles/UU1DBG00XPU163227/charge/pause-resume?country=IT: {"data":{"type":"ChargePauseResume","id":"0e72da7d-ab9f-4be2-887a-a2f557a776cc","attributes":{"action":"resume"}}}
+{'action': 'resume'}
+
+DEBUG:renault_api.kamereon:Received Kamereon response 200 on POST to https://api-wired-prod-1-euw1.wrd-aws.com/commerce/v1/accounts/77644471-a98d-4fa8-8108-818a0ae55863/kamereon/kcm/v1/vehicles/UU1DBG00XPU163227/charge/pause-resume?country=IT: {"data":{"type":"ChargePauseResume","id":"c46a0739-3a60-4bce-955b-e9ed257cb681","attributes":{"action":"pause"}}}
+{'action': 'pause'}

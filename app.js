@@ -11,6 +11,12 @@ class RenaultZoeApp extends Homey.App {
     this.chargeModeAction = this.homey.flow.getActionCard('set_charge_mode')
       .registerRunListener((args, state) => { return args.device.chargeModeActionRunListener(args, state); });
 
+    this.chargeStartAction = this.homey.flow.getActionCard('start-charge')
+      .registerRunListener((args, state) => { return args.device.chargeStartActionRunListener(args, state); });
+
+    this.chargeStartAction = this.homey.flow.getActionCard('stop-charge')
+    .registerRunListener((args, state) => { return args.device.chargeStopActionRunListener(args, state); });
+
     // Conditions
     const isCharging = this.homey.flow.getConditionCard('is_charging')
       .registerRunListener((args) => args.device.getCapabilityValue('measure_chargingStatus'));

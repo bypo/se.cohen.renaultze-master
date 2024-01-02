@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "Start Charge",
+    "it": "Inizia ricarica"
+  },
+  "hint": {
+    "en": "This flow starts/resume battery charging for your vehicle"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=renault-zoe|dacia-spring"
+    }
+  ]
+}

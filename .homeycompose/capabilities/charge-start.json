@@ -1,0 +1,13 @@
+{
+    "type": "boolean",
+    "title": {
+      "en": "Charging",
+      "sv": "Laddar",
+      "fr": "En charge",  
+      "it": "In carica"  
+    },
+    "getable": true,
+    "setable": true,
+    "uiComponent": "toggle",
+    "icon":"assets/icons/chargingStatus.svg"
+  }
