@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "se.cohen.renaultze",
-  "version": "2.3.3",
+  "version": "2.4.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#0d3b66",
@@ -294,7 +294,8 @@
       },
       {
         "title": {
-          "en": "Start Charge"
+          "en": "Start Charge",
+          "it": "Inizia ricarica"
         },
         "hint": {
           "en": "This flow starts/resume battery charging for your vehicle"
@@ -310,7 +311,8 @@
       },
       {
         "title": {
-          "en": "Stop Charge"
+          "en": "Stop Charge",
+          "it": "Termina ricarica"
         },
         "hint": {
           "en": "This flow stops/pause battery charging for your vehicle"

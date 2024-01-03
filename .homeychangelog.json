@@ -68,5 +68,8 @@
   },
   "2.3.3": {
     "en": "key is now correct"
+  },
+  "2.4.0": {
+    "en": "Fixes + fully working Dacia Spring support"
   }
 }
