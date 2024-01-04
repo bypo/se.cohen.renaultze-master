@@ -1,4 +1,4 @@
-# RenaultZE - Handle your Renault Zoe and Dacia in Homey
+# Renault and Dacia HomeyPro App (SDK3) - Handle your Renault Zoe and Dacia in Homey
 
 Add support to check status on your Renault Zoe or Megane E-tech and handle pre-heating.
 Should work on these, but only tested with "ZOE phase 2".

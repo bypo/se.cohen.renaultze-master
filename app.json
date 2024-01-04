@@ -59,10 +59,10 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/joco73/se.cohen.renaultze/issues"
+    "url": "https://github.com/joco73/se.cohen.renaultze-master/issues"
   },
-  "source": "https://github.com/joco73/se.cohen.renaultze",
-  "homepage": "https://github.com/joco73/se.cohen.renaultze#readme",
+  "source": "https://github.com/joco73/se.cohen.renaultze-master",
+  "homepage": "https://github.com/joco73/se.cohen.renaultze-master#readme",
   "flow": {
     "triggers": [
       {
