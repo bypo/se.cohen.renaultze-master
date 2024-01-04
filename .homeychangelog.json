@@ -71,5 +71,8 @@
   },
   "2.4.0": {
     "en": "Fixes + fully working Dacia Spring support"
+  },
+  "2.4.1": {
+    "en": "stability fixes on dacia integration"
   }
 }
