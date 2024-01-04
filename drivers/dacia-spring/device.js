@@ -16,8 +16,8 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
 
     this.chargeStart = 'off';
 
-    this.setCapabilityValue('charge-start', false);
-    this.registerCapabilityListener('charge-start', this.onCapabilityChargeStartButton.bind(this));
+    this.setCapabilityValue('charge_start', false);
+    this.registerCapabilityListener('charge_start', this.onCapabilityChargeStartButton.bind(this));
 
     this.fetchData()
       .catch(err => {
@@ -29,9 +29,9 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
 
   SetCapabilities() {
 
-    if (this.hasCapability('charge-start') === false) {
-      this.log('Added charge-start capabillity ');
-      this.addCapability('charge-start');
+    if (this.hasCapability('charge_start') === false) {
+      this.log('Added charge_start capabillity ');
+      this.addCapability('charge_start');
     }
     if (this.hasCapability('measure_isHome') === false) {
       this.log('Added measure_isHome capabillity ');
@@ -79,7 +79,7 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
     renaultApi.chargingStart()
       .then(result => {
         this.log(result);
-        this.setCapabilityValue('charge-start', true);
+        this.setCapabilityValue('charge_start', true);
       });
   }
 
@@ -91,7 +91,7 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
     renaultApi.chargingStop()
       .then(result => {
         this.log(result);
-        this.setCapabilityValue('charge-start', false);
+        this.setCapabilityValue('charge_start', false);
       });
   }
 
@@ -230,32 +230,13 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
             }
           }
           this.setCapabilityValue('measure_chargingStatus', chargingStatus);
-          this.setCapabilityValue('charge-start', chargingStatus);
+          this.setCapabilityValue('charge_start', chargingStatus);
           this.setCapabilityValue('measure_chargingRemainingTime', chargingRemainingTime);
         }
      })
      .catch((error) => {
       this.log(error);
      })
-
-
-    renaultApi.getChargeMode()
-      .then(result => {
-        this.log(result); 
-        if (result.status == 'ok') {
-          if (result.data.chargeMode === 'scheduled') {
-            this.setCapabilityValue('charge_mode', 'schedule_mode')
-          }
-          else {
-            this.setCapabilityValue('charge_mode', 'always_charging')
-          }
-        }
-        else
-           this.log('-> getChargeMode not supported');
-      })
-    .catch((error) => {
-      this.log(error);
-    })
 
     renaultApi.getCockpit()
       .then(result => {

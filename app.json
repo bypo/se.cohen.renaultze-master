@@ -393,7 +393,8 @@
           "template": "login_credentials",
           "options": {
             "title": {
-              "en": "Login to Dacia IDConnect"
+              "en": "Login to Dacia IDConnect",
+              "it": "Collegamento a Renault IDConnect"
             },
             "usernameLabel": {
               "en": "E-mail address",
@@ -401,7 +402,7 @@
             },
             "usernamePlaceholder": {
               "en": "john@doe.com",
-              "it": "john@doe.com"
+              "it": "marco@rossi.it"
             },
             "passwordLabel": {
               "en": "Password",
@@ -476,7 +477,28 @@
       "pair": [
         {
           "id": "login_credentials",
-          "template": "login_credentials"
+          "template": "login_credentials",
+          "options": {
+            "title": {
+              "en": "Login to Renault IDConnect",
+              "it": "Collegamento a Renault IDConnect"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "it": "Indirizzo E-mail"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "it": "marco@rossi.it"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "it": "Password"
+            },
+            "passwordPlaceholder": {
+              "en": "Password"
+            }
+          }
         },
         {
           "id": "list_devices",
@@ -528,7 +550,7 @@
       "getable": true,
       "setable": true
     },
-    "charge-start": {
+    "charge_start": {
       "type": "boolean",
       "title": {
         "en": "Charging",
