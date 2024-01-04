@@ -1,0 +1,14 @@
+{
+    "title": {
+      "en": "!{{At home|Not at home}} ",
+      "it": "!{{A casa|Non a casa}} "
+    },
+    "args": [
+      {
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=renault-zoe|dacia-spring"
+      }
+    ]
+  }
+  

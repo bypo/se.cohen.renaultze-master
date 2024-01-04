@@ -48,7 +48,16 @@
   "pair": [
     {
       "id": "login_credentials",
-      "template": "login_credentials"
+      "template": "login_credentials",
+      "options": {
+        "title": {
+          "en": "Login to Dacia IDConnect"
+        },
+        "usernameLabel": { "en": "E-mail address", "it": "Indirizzo E-mail" },
+        "usernamePlaceholder": { "en": "john@doe.com", "it": "john@doe.com" },
+        "passwordLabel": { "en": "Password", "it": "Password" },
+        "passwordPlaceholder": { "en": "Password", "en": "Password" }
+      }
     },
     {
       "id": "list_devices",

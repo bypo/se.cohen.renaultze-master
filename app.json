@@ -230,6 +230,20 @@
       },
       {
         "title": {
+          "en": "!{{At home|Not at home}} ",
+          "it": "!{{A casa|Non a casa}} "
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=renault-zoe|dacia-spring"
+          }
+        ],
+        "id": "is_home"
+      },
+      {
+        "title": {
           "en": "!{{Plugged in|Not plugged in}} ",
           "sv": "!{{Inkopplad|Ej inlopplad}} ",
           "fr": "!{{Brachée|Non branchée}} ",
@@ -376,7 +390,27 @@
       "pair": [
         {
           "id": "login_credentials",
-          "template": "login_credentials"
+          "template": "login_credentials",
+          "options": {
+            "title": {
+              "en": "Login to Dacia IDConnect"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "it": "Indirizzo E-mail"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "it": "john@doe.com"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "it": "Password"
+            },
+            "passwordPlaceholder": {
+              "en": "Password"
+            }
+          }
         },
         {
           "id": "list_devices",

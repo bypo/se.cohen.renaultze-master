@@ -24,7 +24,7 @@ class RenaultZoeApp extends Homey.App {
     const isPluggedIn = this.homey.flow.getConditionCard('is_pluggedIn')
       .registerRunListener((args) => args.device.getCapabilityValue('measure_plugStatus'));
 
-    const isHome = this.homey.flow.getConditionCard('is_Home')
+    const isHome = this.homey.flow.getConditionCard('is_home')
       .registerRunListener((args) => args.device.getCapabilityValue('measure_isHome'));
 
   }
