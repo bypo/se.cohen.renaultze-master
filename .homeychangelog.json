@@ -74,5 +74,8 @@
   },
   "2.4.1": {
     "en": "stability fixes on dacia integration"
+  },
+  "2.5.0": {
+    "en": "Few fixes + homey store updates"
   }
 }
