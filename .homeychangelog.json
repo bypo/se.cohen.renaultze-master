@@ -77,5 +77,8 @@
   },
   "2.5.0": {
     "en": "Few fixes + homey store updates"
+  },
+  "2.5.1": {
+    "en": "Fixed location reporting on Renault Zoe"
   }
 }
