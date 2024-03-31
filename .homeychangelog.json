@@ -80,5 +80,8 @@
   },
   "2.5.1": {
     "en": "Fixed location reporting on Renault Zoe"
+  },
+  "2.5.2": {
+    "en": "github address updated"
   }
 }
