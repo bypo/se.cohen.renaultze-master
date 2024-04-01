@@ -83,5 +83,8 @@
   },
   "2.5.2": {
     "en": "github address updated"
+  },
+  "2.5.3": {
+    "en": "Fix in GPS info. Json response from API changed without notice. Source code has been updated and now is working again"
   }
 }
