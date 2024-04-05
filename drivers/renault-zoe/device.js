@@ -50,8 +50,8 @@ module.exports = class RenaultZoeDevice extends Homey.Device {
   async setLocation(result) {
     this.log('-> setLocation run');
     try {
-      let lat = result.data.gpsLatitude;
-      let lng = result.data.gpsLongitude;
+      let lat = result.data.attributes.gpsLatitude;
+      let lng = result.data.attributes.gpsLongitude;
       const HomeyLat = this.homey.geolocation.getLatitude();
       const HomeyLng = this.homey.geolocation.getLongitude();
       const settings = this.getSettings();
@@ -59,10 +59,10 @@ module.exports = class RenaultZoeDevice extends Homey.Device {
       const setLocation = renaultApi.calculateHome(HomeyLat, HomeyLng, lat, lng);
       await this.setCapabilityValue('measure_isHome', setLocation <= 1);
       await this.setCapabilityValue('measure_location', 'https://www.google.com/maps/search/?api=1&query=' + lat + ',' + lng);
-//      await this.setCapabilityValue('measure_location_latitude', lat.toString());
-//      await this.setCapabilityValue('measure_location_longitude', lng.toString());
-      await this.setCapabilityValue('measure_location_latitude', String(lat));
-      await this.setCapabilityValue('measure_location_longitude', String(lng));
+      await this.setCapabilityValue('measure_location_latitude', lat.toString());
+      await this.setCapabilityValue('measure_location_longitude', lng.toString());
+      //await this.setCapabilityValue('measure_location_latitude', String(lat));
+      //await this.setCapabilityValue('measure_location_longitude', String(lng));
     } catch (error) {
       this.homey.app.log(error);
     }
