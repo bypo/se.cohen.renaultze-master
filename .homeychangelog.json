@@ -89,5 +89,8 @@
   },
   "2.5.4": {
     "en": "Renault GPS Fixes"
+  },
+  "2.5.5": {
+    "en": "Renault API fixes"
   }
 }
