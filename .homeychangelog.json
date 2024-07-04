@@ -92,5 +92,8 @@
   },
   "2.5.5": {
     "en": "Renault API fixes"
+  },
+  "2.6.0": {
+    "en": "Fixed app behaviour. IT was not showing data and/or status but now it should be ok!"
   }
 }
