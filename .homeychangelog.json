@@ -95,5 +95,8 @@
   },
   "2.6.0": {
     "en": "Fixed app behaviour. IT was not showing data and/or status but now it should be ok!"
+  },
+  "2.6.1": {
+    "en": "Fixes for Renault Cars (Dacia was already working)"
   }
 }
