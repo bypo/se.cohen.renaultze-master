@@ -98,5 +98,8 @@
   },
   "2.6.1": {
     "en": "Fixes for Renault Cars (Dacia was already working)"
+  },
+  "2.6.2": {
+    "en": "Fixed Zoe battery charge issue"
   }
 }
