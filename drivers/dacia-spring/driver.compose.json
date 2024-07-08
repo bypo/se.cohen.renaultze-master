@@ -16,7 +16,6 @@
     "onoff",
     "measure_battery",
     "measure_batteryTemperature",
-    "measure_batteryAvailableEnergy",
     "measure_batteryAutonomy",
     "measure_totalMileage",
     "measure_plugStatus",

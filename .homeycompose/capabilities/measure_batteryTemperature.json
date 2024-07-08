@@ -10,6 +10,6 @@
   "units": "°C",
   "getable": true,
   "setable": false,
-  "uiComponent": "sensor",
+  "uiComponent": null,
   "icon": "assets/icons/batteryTemperture.svg"
 }

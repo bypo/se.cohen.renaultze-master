@@ -19,6 +19,9 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
     this.setCapabilityValue('charge_start', false);
     this.registerCapabilityListener('charge_start', this.onCapabilityChargeStartButton.bind(this));
 
+    this.registerCapabilityListener('measure_totalMileage', this.onCapabilityChargeStartButton.bind(this));
+
+
     this.fetchData()
       .catch(err => {
         this.error(err);
@@ -195,43 +198,47 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
     this.log(settings);
     let renaultApi = new api.RenaultApi(settings);
 
-    renaultApi.getBatteryStatus()
+    
+      renaultApi.getBatteryStatus()
       .then(result => {
-        this.log(result);
+        this.log('-> enter getBatteryStatus');
+        this.log(result.data);
+        
         if (result.status == 'notSupported') {
           this.setCapabilityValue('measure_battery', 0);
           this.setCapabilityValue('measure_batteryTemperature', 0);
-          this.setCapabilityValue('measure_batteryAvailableEnergy', 0);
+        //this.setCapabilityValue('measure_batteryAvailableEnergy', 0);
           this.setCapabilityValue('measure_batteryAutonomy', 0);
           this.setCapabilityValue('measure_plugStatus', false);
           this.setCapabilityValue('measure_chargingStatus', false);
           this.setCapabilityValue('measure_chargingRemainingTime', 0);
-          //this.setCapabilityValue('measure_chargingInstantaneousPower', 0);
+        //this.setCapabilityValue('measure_chargingInstantaneousPower', 0);
         }
         else {
-          this.setCapabilityValue('measure_battery', result.data.batteryLevel ?? 0);
-          this.setCapabilityValue('measure_batteryTemperature', result.data.batteryTemperature ?? 20);
-          this.setCapabilityValue('measure_batteryAvailableEnergy', result.data.batteryAvailableEnergy ?? 0);
-          this.setCapabilityValue('measure_batteryAutonomy', result.data.batteryAutonomy ?? 0);
+          this.setCapabilityValue('measure_battery', result.data.data.attributes["batteryLevel"] ?? 0);
+          this.setCapabilityValue('measure_batteryTemperature', result.data.data.attributes["batteryTemperature"] ?? 20);
+          this.setCapabilityValue('measure_batteryAvailableEnergy', result.data.data.attributes["batteryAvailableEnergy"] ?? 0);
+          this.setCapabilityValue('measure_batteryAutonomy', result.data.data.attributes["batteryAutonomy"] ?? 0);
           let plugStatus = false;
-          if (result.data.plugStatus === 1) {
+          if (result.data.data.attributes["plugStatus"] === 1) {
             plugStatus = true;
           }
           this.setCapabilityValue('measure_plugStatus', plugStatus);
+          
           let chargingRemainingTime = 0;
           let chargingInstantaneousPower = 0;
           let chargingStatus = false;
-          if (result.data.chargingStatus === 1) {
+          if (result.data.data.attributes["chargingStatus"] === 1) {
             chargingStatus = true;
-            chargingRemainingTime = result.data.chargingRemainingTime ?? 0;
-            chargingInstantaneousPower = result.data.chargingInstantaneousPower ?? 0;
+            chargingRemainingTime = result.data.data.attributes["chargingRemainingTime"] ?? 0;
+     /*       chargingInstantaneousPower = result.data.data.attributes["chargingInstantaneousPower"] ?? 0;
             if (renaultApi.reportsChargingPowerInWatts()) {
               chargingInstantaneousPower = chargingInstantaneousPower / 1000;
-            }
+            }   */
           }
-          this.setCapabilityValue('measure_chargingStatus', chargingStatus);
           this.setCapabilityValue('charge_start', chargingStatus);
           this.setCapabilityValue('measure_chargingRemainingTime', chargingRemainingTime);
+        // this.setCapabilityValue('measure_chargingInstantaneousPower', chargingInstantaneousPower);
         }
      })
      .catch((error) => {
@@ -240,11 +247,12 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
 
     renaultApi.getCockpit()
       .then(result => {
-        this.log(result);
+        this.log('-> enter getCockpit');
+        this.log(result.data);
         if (result.status == 'ok') {
-          this.setCapabilityValue('measure_totalMileage', result.data.totalMileage ?? 0);
+          this.setCapabilityValue('measure_totalMileage', result.data.data.attributes["totalMileage"] ?? 0);
         if (renaultApi.supportFuelStatus() == true) {
-          this.setCapabilityValue('measure_batteryAutonomy', result.data.fuelAutonomy ?? 0);
+          this.setCapabilityValue('measure_batteryAutonomy', result.data.data.attributes["fuelAutonomy"] ?? 0);
           }
         }
       })

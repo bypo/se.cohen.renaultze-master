@@ -361,7 +361,6 @@
         "onoff",
         "measure_battery",
         "measure_batteryTemperature",
-        "measure_batteryAvailableEnergy",
         "measure_batteryAutonomy",
         "measure_totalMileage",
         "measure_plugStatus",
@@ -440,13 +439,11 @@
         "charge_mode",
         "measure_battery",
         "measure_batteryTemperature",
-        "measure_batteryAvailableEnergy",
         "measure_batteryAutonomy",
         "measure_totalMileage",
         "measure_plugStatus",
         "measure_chargingStatus",
         "measure_chargingRemainingTime",
-        "measure_chargingInstantaneousPower",
         "measure_isHome",
         "measure_location",
         "measure_location_latitude",
@@ -590,7 +587,7 @@
       "units": "kW",
       "getable": true,
       "setable": false,
-      "uiComponent": "sensor",
+      "uiComponent": null,
       "icon": "assets/icons/batteryAvailableEnergy.svg"
     },
     "measure_batteryTemperature": {
@@ -605,7 +602,7 @@
       "units": "°C",
       "getable": true,
       "setable": false,
-      "uiComponent": "sensor",
+      "uiComponent": null,
       "icon": "assets/icons/batteryTemperture.svg"
     },
     "measure_chargingInstantaneousPower": {
@@ -619,7 +616,7 @@
       "units": "kW",
       "getable": true,
       "setable": false,
-      "uiComponent": "sensor",
+      "uiComponent": null,
       "icon": "assets/icons/chargingInstantaneousPower.svg"
     },
     "measure_chargingRemainingTime": {
