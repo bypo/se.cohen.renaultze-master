@@ -104,5 +104,8 @@
   },
   "2.6.3": {
     "en": "Fixed \"charging status\" "
+  },
+  "2.6.4": {
+    "en": "measure_batteryAvailableEnergy removed (api not returning anymore this information - say thank you to Renault :-))"
   }
 }
