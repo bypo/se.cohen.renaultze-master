@@ -158,7 +158,7 @@ module.exports = class RenaultZoeDevice extends Homey.Device {
     else {
       this.log('Stop AC');
       this.setHvacStatus('on');
-      throw new Error('There is no way to stop a stated heater session on current Zoe implementation.');
+      throw new Error('There is no way to stop a started heater session on current Zoe implementation.');
     }
   }
 
