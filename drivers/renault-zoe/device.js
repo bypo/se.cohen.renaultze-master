@@ -197,7 +197,7 @@ module.exports = class RenaultZoeDevice extends Homey.Device {
         if (result.status == 'notSupported') {
           this.setCapabilityValue('measure_battery', 0);
           this.setCapabilityValue('measure_batteryTemperature', 0);
-          this.setCapabilityValue('measure_batteryAvailableEnergy', 0);
+        //  this.setCapabilityValue('measure_batteryAvailableEnergy', 0);
           this.setCapabilityValue('measure_batteryAutonomy', 0);
           this.setCapabilityValue('measure_plugStatus', false);
           this.setCapabilityValue('measure_chargingStatus', false);
@@ -207,7 +207,7 @@ module.exports = class RenaultZoeDevice extends Homey.Device {
         else {
           this.setCapabilityValue('measure_battery', result.data.data.attributes["batteryLevel"] ?? 0);
           this.setCapabilityValue('measure_batteryTemperature', result.data.data.attributes["batteryTemperature"] ?? 20);
-          this.setCapabilityValue('measure_batteryAvailableEnergy', result.data.data.attributes["batteryAvailableEnergy"] ?? 0);
+//          this.setCapabilityValue('measure_batteryAvailableEnergy', result.data.data.attributes["batteryAvailableEnergy"] ?? 0);
           this.setCapabilityValue('measure_batteryAutonomy', result.data.data.attributes["batteryAutonomy"] ?? 0);
           let plugStatus = false;
           if (result.data.data.attributes["plugStatus"] === 1) {

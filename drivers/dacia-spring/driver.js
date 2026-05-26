@@ -14,8 +14,8 @@ module.exports = class DaciaSpringDriver extends Homey.Driver {
     let settings = {
       username: null,
       password: null,
-      country: 'IT',
-      locale: 'it-IT',
+      country: 'en',
+      locale: 'en_GB',
       accountId: null,
       vin: null,
       modelCode: null,

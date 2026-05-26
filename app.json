@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "se.cohen.renaultze",
-  "version": "2.6.4",
+  "version": "2.7.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#0d3b66",
@@ -574,21 +574,6 @@
       "setable": false,
       "uiComponent": "sensor",
       "icon": "assets/icons/batteryAutonomy.svg"
-    },
-    "measure_batteryAvailableEnergy": {
-      "type": "number",
-      "decimals": 0,
-      "title": {
-        "en": "Available energy",
-        "sv": "Tillgänglig energi",
-        "fr": "Énergie disponible",
-        "it": "Energia disponibile"
-      },
-      "units": "kW",
-      "getable": true,
-      "setable": false,
-      "uiComponent": null,
-      "icon": "assets/icons/batteryAvailableEnergy.svg"
     },
     "measure_batteryTemperature": {
       "type": "number",

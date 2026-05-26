@@ -207,7 +207,6 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
         if (result.status == 'notSupported') {
           this.setCapabilityValue('measure_battery', 0);
           this.setCapabilityValue('measure_batteryTemperature', 0);
-        //this.setCapabilityValue('measure_batteryAvailableEnergy', 0);
           this.setCapabilityValue('measure_batteryAutonomy', 0);
           this.setCapabilityValue('measure_plugStatus', false);
           this.setCapabilityValue('measure_chargingStatus', false);
@@ -217,7 +216,6 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
         else {
           this.setCapabilityValue('measure_battery', result.data.data.attributes["batteryLevel"] ?? 0);
           this.setCapabilityValue('measure_batteryTemperature', result.data.data.attributes["batteryTemperature"] ?? 20);
-          this.setCapabilityValue('measure_batteryAvailableEnergy', result.data.data.attributes["batteryAvailableEnergy"] ?? 0);
           this.setCapabilityValue('measure_batteryAutonomy', result.data.data.attributes["batteryAutonomy"] ?? 0);
           let plugStatus = false;
           if (result.data.data.attributes["plugStatus"] === 1) {
@@ -231,14 +229,10 @@ module.exports = class DaciaSpringDevice extends Homey.Device {
           if (result.data.data.attributes["chargingStatus"] === 1) {
             chargingStatus = true;
             chargingRemainingTime = result.data.data.attributes["chargingRemainingTime"] ?? 0;
-     /*       chargingInstantaneousPower = result.data.data.attributes["chargingInstantaneousPower"] ?? 0;
-            if (renaultApi.reportsChargingPowerInWatts()) {
-              chargingInstantaneousPower = chargingInstantaneousPower / 1000;
-            }   */
           }
           this.setCapabilityValue('charge_start', chargingStatus);
+          this.setCapabilityValue('measure_chargingStatus', chargingStatus);
           this.setCapabilityValue('measure_chargingRemainingTime', chargingRemainingTime);
-        // this.setCapabilityValue('measure_chargingInstantaneousPower', chargingInstantaneousPower);
         }
      })
      .catch((error) => {
