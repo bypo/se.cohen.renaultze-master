@@ -107,5 +107,8 @@
   },
   "2.6.4": {
     "en": "measure_batteryAvailableEnergy removed (api not returning anymore this information - say thank you to Renault :-))"
+  },
+  "2.7.0": {
+    "en": "Authentication fixed + Updated Renault API Keys"
   }
 }
