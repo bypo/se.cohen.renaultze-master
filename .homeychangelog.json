@@ -128,5 +128,8 @@
   },
   "2.7.6": {
     "en": "Charge Start fix"
+  },
+  "2.7.7": {
+    "en": "Fixed stability issues introduced with last version"
   }
 }
