@@ -131,5 +131,8 @@
   },
   "2.7.7": {
     "en": "Fixed stability issues introduced with last version"
+  },
+  "2.7.8": {
+    "en": "Security Fixes and Start Charging fixes for Dacia Spring"
   }
 }
