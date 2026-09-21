@@ -134,5 +134,8 @@
   },
   "2.7.8": {
     "en": "Security Fixes and Start Charging fixes for Dacia Spring"
+  },
+  "2.7.9": {
+    "en": "fix associations groups on 4 buttons devices"
   }
 }
